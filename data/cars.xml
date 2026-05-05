@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car id="bmw-x5-2023" featured="true">
+    <brand>BMW</brand>
+    <model>X5 xDrive40i</model>
+    <year>2023</year>
+    <price>219900</price>
+    <mileage>12000</mileage>
+    <fuel>Бензин</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Полный</drive>
+    <market>Новый</market>
+    <body>SUV</body>
+    <kuzov>SUV (G05)</kuzov>
+    <engine>I6 (B58) 3.0</engine>
+    <restailing>X5 xDrive40i (рестайлинг)</restailing>
+    <consumption>8.4–9.9 л</consumption>
+    <power>381 л.с.</power>
+    <badge>Хит продаж</badge>
+    <image>assets/bmwx5.png</image>
+    <image>assets/bmwx5sboku.png</image>
+    <image>assets/bmwx5z.png</image>
+    <image>assets/bmwx5salon.png</image>
+    <shortDescription>Современный кроссовер с полным приводом и высоким уровнем комфорта.</shortDescription>
+    <description>BMW X5 xDrive40i 2023 года (рестайлинг, кузов G05) — это премиальный кроссовер, оснащенный 3.0-литровым 
+    бензиновым турбомотором I6 (B58) с мягким гибридом (48V), мощностью 375–381 л.с. и 8-ступенчатым автоматом Steptronic. 
+    Автомобиль имеет полный привод, разгон 0-100 км/ч занимает около 5.4–5.5 секунд, а смешанный расход топлива составляет примерно 8.4–9.9 л/100 км. 
+    Автомобиль находится в состоянии нового с подтвержденным пробегом всего 12 000 км, что гарантирует идеальную сохранность всех узлов и агрегатов.</description>
+    <feature>Панорамная крыша Sky Lounge (с диодной подсветкой)</feature>
+    <feature>Система камер 360° Surround View (с 3D-визуализацией)</feature>
+    <feature>Подогрев и вентиляция сидений (передний и задний ряд)</feature>
+    <feature>Проекционный дисплей на лобовое стекло (HUD)</feature>
+    <feature>Акустика Harman Kardon Surround Sound</feature>
+  </car>
+
+  <car id="audi-q7-2023" featured="true">
+    <brand>Audi</brand>
+    <model>Q7</model>
+    <year>2023</year>
+    <price>304000</price>
+    <mileage>8500</mileage>
+    <fuel>Дизель</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Полный</drive>
+    <market>Новый</market>
+    <body>SUV</body>
+    <kuzov>SUV (4M)</kuzov>
+    <engine>V6 (50 TDI) 3.0</engine>
+    <restailing>Q7 (рестайлинг)</restailing>
+    <consumption>7.8–8.4 л</consumption>
+    <power>286 л.с.</power>
+    <badge>Новинка</badge>
+    <image>assets/audiq7.png</image>
+    <image>assets/audiq7sboku.png</image>
+    <image>assets/audiq7z.png</image>
+    <image>assets/audiq7salon.png</image>
+    <shortDescription>Вместительный SUV с полным приводом quattro и удобным салоном.</shortDescription>
+    <description>Audi Q7 2023 года (рестайлинг, кузов 4M) — это премиальный кроссовер, 
+    оснащенный 3.0-литровым дизельным турбомотором V6 (50 TDI) с мягким гибридом (MHEV), 
+    мощностью 286 л.с. и 8-ступенчатым автоматом Tiptronic. Автомобиль имеет постоянный полный привод 
+    quattro, разгон 0-100 км/ч занимает около 6.1–6.3 секунды, а смешанный расход топлива составляет примерно 7.8–8.4 л/100 км.
+    Автомобиль только прошел обкатку, имеет минимальный пробег 8 500 км и сохранился в безупречном состоянии, фактически не отличаясь от нового экземпляра из салона.</description>
+    <feature>7 мест</feature>
+    <feature>Адаптивная пневматическая подвеска</feature>
+    <feature>Матричные фары HD Matrix LED</feature>
+    <feature>Цифровая панель Audi Virtual Cockpit</feature>
+    <feature>Акустика Bang и Olufsen 3D Premium</feature>
+    <feature>Камеры кругового обзора 360°</feature>
+  </car>
+
+  <car id="toyota-camry-2022" featured="true">
+    <brand>Toyota</brand>
+    <model>Camry</model>
+    <year>2022</year>
+    <price>91000</price>
+    <mileage>27000</mileage>
+    <fuel>Бензин</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Передний</drive>
+    <market>С пробегом</market>
+    <body>Седан</body>
+    <kuzov>Седан (XV70)</kuzov>
+    <engine>A25A-FKS 2.5</engine>
+    <restailing>Camry (рестайлинг)</restailing>
+    <consumption>6.8–7.2 л</consumption>
+    <power>200 л.с.</power>
+    <badge>Популярный</badge>
+    <image>assets/camry.png</image>
+    <image>assets/camrysboku.png</image>
+    <image>assets/camryz.png</image>
+    <image>assets/camrysalon.png</image>
+    <shortDescription>Надёжный седан для города, трассы и повседневных поездок.</shortDescription>
+    <description>Toyota Camry 2022 года (рестайлинг, кузов XV70) — это классический бизнес-седан, 
+    оснащенный надежным 2.5-литровым бензиновым двигателем мощностью 200 л.с. и современным 8-ступенчатым автоматом. Автомобиль имеет передний привод, 
+    разгон 0-100 км/ч занимает около 8.7 секунды, а смешанный расход топлива составляет примерно 6.8–7.2 л/100 км. Автомобиль с небольшим пробегом 27 000 км полностью обслужен, 
+    находится в отличном техническом состоянии и не требует никаких вложений для дальнейшей эксплуатации.</description>
+    <feature>Светодиодная оптика и ДХО</feature>
+    <feature>Камеры кругового обзора 360°</feature>
+    <feature>Кожаный салон с электрорегулировками</feature>
+    <feature>Адаптивный круиз-контроль</feature>
+    <feature>Двухзонный климат-контроль</feature>
+    <feature>Зимний пакет (все подогревы)</feature>
+  </car>
+
+  <car id="volkswagen-passat-2021" featured="false">
+    <brand>Volkswagen</brand>
+    <model>Passat B8</model>
+    <year>2021</year>
+    <price>67840</price>
+    <mileage>39000</mileage>
+    <fuel>Бензин</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Полный</drive>
+    <market>С пробегом</market>
+    <body>Седан</body>
+    <kuzov>Седан</kuzov>
+    <engine>TSI 2.0</engine>
+    <restailing>B8 (рестайлинг)</restailing>
+    <consumption>6.3–6.5 л</consumption>
+    <power>190 л.с.</power>
+    <badge>Популярный</badge>
+    <image>assets/passat.png</image>
+    <image>assets/passatsboku.png</image>
+    <image>assets/passatz.png</image>
+    <image>assets/passatsalon.png</image>
+    <shortDescription>Премиальный бизнес-седан с немецкой эргономикой и высоким уровнем комфорта.</shortDescription>
+    <description>Volkswagen Passat B8 2021 года (рестайлинг) — это элегантный бизнес-седан, оснащенный тяговитым 2.0-литровым бензиновым 
+    турбомотором мощностью 190 л.с. и преселективным 7-ступенчатым роботом DSG. Автомобиль имеет передний привод, разгон 0-100 км/ч 
+    занимает около 7.5 секунды, а смешанный расход топлива составляет примерно 6.3–6.5 л/100 км.
+    Автомобиль с пробегом 39 000 км своевременно обслуживался по регламенту, находится в отличном техническом и эстетическом состоянии.</description>
+    <feature>Матричные фары IQ.Light</feature>
+    <feature>Камеры кругового обзора 360°</feature>
+    <feature>Адаптивный круиз-контроль</feature>
+    <feature>Беспроводной Apple CarPlay / Android Auto</feature>
+    <feature>Электропривод багажника</feature>
+  </car>
+
+  <car id="porsche-cayenne-2020" featured="false">
+    <brand>Porsche</brand>
+    <model>Cayenne III</model>
+    <year>2020</year>
+    <price>263000</price>
+    <mileage>56000</mileage>
+    <fuel>Бензин</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Полный</drive>
+    <market>С пробегом</market>
+    <body>SUV</body>
+    <kuzov>SUV</kuzov>
+    <engine>V6 3.0</engine>
+    <restailing>Cayenne III (E3)</restailing>
+    <consumption>9.0–9.4 л</consumption>
+    <power>340 л.с.</power>
+    <badge>С пробегом</badge>
+    <image>assets/porsh.png</image>
+    <image>assets/porshsboku.png</image>
+    <image>assets/porshz.png</image>
+    <image>assets/porshsalon.png</image>
+    <shortDescription>Спортивный люкс-кроссовер с эталонной управляемостью и высочайшим уровнем комфорта.</shortDescription>
+    <description>Porsche Cayenne III 2020 года — это премиальный спортивный кроссовер, 
+    оснащенный мощным 3.0-литровым бензиновым турбомотором V6 мощностью 340 л.с. и 
+    классическим 8-ступенчатым автоматом Tiptronic S. Автомобиль имеет активный полный привод, 
+    разгон 0-100 км/ч занимает 6.2 секунды (5.9 с пакетом Sport Chrono), а смешанный расход топлива составляет примерно 9.0–9.4 л/100 км.
+    Пробег 56 000 км. Были повреждения по задней левой части (крыло и крышка багажника) — всё качественно исправлено, геометрия не нарушена. </description>
+    <feature>Матричные светодиодные фары PDLS Plus</feature>
+    <feature>Адаптивная пневмоподвеска с PASM</feature>
+    <feature>Камеры кругового обзора 360°</feature>
+    <feature>Комфортные сиденья с вентиляцией и памятью</feature>
+    <feature>Акустическая система BOSE или Burmester</feature>
+    <feature>Панорамная крыша</feature>
+  </car>
+
+  <car id="geely-coolray-2026" featured="false">
+    <brand>Geely</brand>
+    <model>Coolray</model>
+    <year>2026</year>
+    <price>75900</price>
+    <mileage>0</mileage>
+    <fuel>Бензин</fuel>
+    <transmission>Автомат</transmission>
+    <drive>Передний</drive>
+    <market>Новый</market>
+    <body>SUV</body>
+    <kuzov>SUV</kuzov>
+    <engine>LEISHEN POWER 1.5 TD</engine>
+    <restailing>Coolray 2026 (рестайлинг)</restailing>
+    <consumption>6.1–6.6 л</consumption>
+    <power>181 л.с.</power>
+    <badge>Новый</badge>
+    <image>assets/geely.png</image>
+    <image>assets/geelysboku.png</image>
+    <image>assets/geelyz.png</image>
+    <image>assets/geelysalon.png</image>
+    <shortDescription>Спортивный городской кроссовер с ярким дизайном и максимальным уровнем комфорта.</shortDescription>
+    <description>Geely Coolray 2026 года — это динамичный молодежный кроссовер, оснащенный модернизированным 1.5-литровым 
+    бензиновым турбомотором мощностью 174–181 л.с. и усовершенствованным 7-ступенчатым роботом с двойным сцеплением («мокрый» DCT). Автомобиль имеет передний привод, 
+    разгон 0-100 км/ч занимает около 7.6 секунды, а смешанный расход топлива составляет примерно 6.1–6.6 л/100 км.
+    Автомобиль только что сошел с конвейера, сохранив все заводские пленки и пломбы, и готов стать вашим первым надежным спутником на дороге.</description>
+    <feature>Панорамная крыша с люком</feature>
+    <feature>Система кругового обзора 540°</feature>
+    <feature>Полный зимний пакет (все подогревы)</feature>
+    <feature>Адаптивный круиз-контроль</feature>
+    <feature>Автоматическая система парковки</feature>
+    <feature>Атмосферная подсветка интерьера</feature>
+  </car>
+</cars>
