@@ -1,0 +1,51 @@
+body[data-page="terms"] {
+  .section--flush-top .container {
+    @include grid;
+
+    > .card {
+      padding: 24px;
+    }
+  }
+}
+
+.accordion {
+  @include grid(12px);
+
+  > div {
+    overflow: hidden;
+    border: 1px solid $line;
+    border-radius: $radius-lg;
+    background: $surface;
+  }
+
+  button {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    border: 0;
+    padding: 18px 20px;
+    background: transparent;
+    color: $text;
+    text-align: left;
+    font-weight: 800;
+    cursor: pointer;
+
+    span {
+      color: $accent;
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  button + div {
+    display: none;
+    padding: 0 20px 18px;
+    color: $text-muted;
+    line-height: 1.8;
+
+    &.is-open {
+      display: block;
+    }
+  }
+}

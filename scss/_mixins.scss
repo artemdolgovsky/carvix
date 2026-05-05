@@ -1,0 +1,38 @@
+@mixin grid($gap: 24px) {
+  display: grid;
+  gap: $gap;
+}
+
+@mixin flex-center($gap: 10px) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin focus-ring {
+  outline: 2px solid rgba(246, 176, 66, 0.75);
+}
+
+@mixin card-shell($radius: $radius-xl) {
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01)), $surface;
+  box-shadow: $shadow;
+}
+
+@mixin dark-panel($radius: $radius-lg) {
+  border: 1px solid $line;
+  border-radius: $radius;
+  background: #0d1225;
+}
+
+
+@mixin accent-chip($size, $radius) {
+  display: grid;
+  place-items: center;
+  width: $size;
+  height: $size;
+  border-radius: $radius;
+  background: rgba(246, 176, 66, 0.12);
+  color: $accent;
+}

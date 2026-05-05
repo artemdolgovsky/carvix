@@ -1,0 +1,216 @@
+.hero {
+  position: relative;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  min-height: 640px;
+
+  &_media,
+  &_overlay {
+    position: absolute;
+    inset: 0;
+  }
+
+  &_media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &_overlay {
+    background: linear-gradient(90deg, rgba(11, 16, 32, 0.96) 0%, rgba(11, 16, 32, 0.74) 45%, rgba(11, 16, 32, 0.3) 100%),
+      linear-gradient(180deg, rgba(11, 16, 32, 0) 0%, rgba(11, 16, 32, 0.7) 100%);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    @include grid(28px);
+    padding: 92px 0 88px;
+  }
+
+  &_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border: 1px solid rgba(246, 176, 66, 0.3);
+    border-radius: 999px;
+    background: rgba(246, 176, 66, 0.1);
+    color: $accent;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &_title {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 900;
+    line-height: 1.04;
+  }
+
+  &_text {
+    max-width: 620px;
+    color: #d4d9e4;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  &_actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  > div {
+    > :first-child {
+      color: $accent;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    > :last-child {
+      color: $text-muted;
+      font-size: 13px;
+    }
+  }
+}
+
+.features-grid {
+  @include grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  > .card {
+    padding: 24px;
+
+    > div:first-child {
+      @include accent-chip(52px, 18px);
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.process-section {
+  padding: 90px 0;
+  background: $bg;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 24px;
+
+  > .card {
+    padding: 24px;
+  }
+}
+
+.steps,
+.review-grid {
+  @include grid(16px);
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 22px;
+  border: 1px solid $line;
+  border-radius: $radius-lg;
+  background: $surface;
+
+  > :first-child {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    background: $accent;
+    color: $accent-dark;
+    font-weight: 900;
+  }
+
+  > :last-child {
+    color: #d7ddeb;
+    line-height: 1.8;
+  }
+}
+
+.review-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  > .review:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+.review {
+  padding: 20px;
+  border: 1px solid $line;
+  border-radius: $radius-lg;
+  background: rgba(255, 255, 255, 0.03);
+
+  > :first-child {
+    margin-bottom: 14px;
+    color: $accent;
+    letter-spacing: 4px;
+  }
+
+  > :nth-child(2) {
+    color: #d7ddeb;
+    line-height: 1.8;
+  }
+
+  > :nth-child(3) {
+    margin-top: 16px;
+    font-weight: 800;
+  }
+
+  > :nth-child(4) {
+    margin-top: 4px;
+    color: $text-muted;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .features-grid,
+  .review-grid,
+  .process {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero {
+    min-height: 560px;
+  }
+
+  .stats {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-section {
+    padding: 64px 0;
+  }
+
+  .hero {
+    .container {
+      padding: 78px 0 68px;
+    }
+
+    &_text {
+      font-size: 16px;
+    }
+  }
+}

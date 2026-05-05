@@ -1,0 +1,523 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: $text;
+  background: $bg;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.site-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, rgba(246, 176, 66, 0.08), transparent 26%),
+    linear-gradient(180deg, #0b1020 0%, #0a0f1d 100%);
+}
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid $line;
+  background: rgba(11, 16, 32, 0.94);
+  backdrop-filter: blur(12px);
+
+  .container {
+    @include flex-center(24px);
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  img {
+    height: auto;
+    max-width: 220px;
+  }
+
+  nav {
+    @include flex-center(12px);
+
+    a {
+      padding: 14px 20px;
+      border-radius: $radius-lg;
+      color: #d4d9e4;
+      font-size: 16px;
+      font-weight: 700;
+      outline-offset: 4px;
+      transition: 0.2s ease;
+
+      &:hover,
+      &.is-active {
+        color: $accent;
+        background: rgba(246, 176, 66, 0.12);
+      }
+
+      &.is-active {
+        box-shadow: inset 0 0 0 1px rgba(246, 176, 66, 0.2);
+      }
+
+      &:focus-visible {
+        @include focus-ring;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 1px solid $line;
+  background: rgba(8, 12, 24, 0.9);
+
+  .container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 0.9fr 0.8fr;
+    gap: 24px;
+    padding: 42px 0;
+
+    > div {
+      &:first-child {
+        margin-top: -20px;
+      }
+
+      &:nth-child(2) {
+        h2,
+        a {
+          margin-left: 34px;
+        }
+      }
+
+      &:last-child {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  img {
+    height: auto;
+    max-width: 220px;
+  }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  p,
+  span,
+  a {
+    display: block;
+    color: $text-muted;
+    line-height: 1.8;
+  }
+
+  a:hover {
+    color: $accent;
+  }
+}
+
+button[data-menu-toggle] {
+  display: none;
+  border: 1px solid $line;
+  border-radius: $radius-lg;
+  padding: 12px 14px;
+  background: transparent;
+  color: $text;
+  cursor: pointer;
+}
+
+[data-mobile-panel] {
+  display: none;
+  border-top: 1px solid $line;
+
+  &.is-open {
+    display: block;
+  }
+
+  .container {
+    @include grid(10px);
+    padding: 16px 0 20px;
+  }
+
+  a {
+    padding: 14px 16px;
+    border-radius: $radius-lg;
+    background: rgba(255, 255, 255, 0.03);
+    color: #d4d9e4;
+    font-weight: 700;
+  }
+}
+
+%button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: $radius-lg;
+  padding: 14px 22px;
+  font-weight: 800;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: 0.2s ease;
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.button {
+  @extend %button-base;
+
+  &--primary {
+    @extend %button-base;
+    background: $accent;
+    color: $accent-dark;
+
+    &:hover {
+      transform: translateY(-1px);
+      background: #ffc157;
+    }
+  }
+
+  &--secondary {
+    @extend %button-base;
+    border: 1px solid $line;
+    background: rgba(255, 255, 255, 0.02);
+    color: $text;
+
+    &:hover {
+      border-color: rgba(246, 176, 66, 0.35);
+      color: $accent;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
+
+%section-space {
+  padding: 90px 0;
+}
+
+.section {
+  @extend %section-space;
+
+  &-surface {
+    @extend %section-space;
+    background: rgba(18, 25, 53, 0.65);
+  }
+
+  &--page-hero {
+    @extend %section-space;
+    padding-top: 56px;
+    padding-bottom: 42px;
+  }
+
+  &--flush-top {
+    @extend %section-space;
+    padding-top: 0;
+  }
+
+  &--car-detail {
+    @extend %section-space;
+    padding-top: 22px;
+  }
+}
+
+.section-head {
+  max-width: 760px;
+  margin-bottom: 34px;
+
+  .section-surface & {
+    margin-inline: auto;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  .filters & {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    margin: 14px 0 0;
+    color: $text-muted;
+    line-height: 1.8;
+
+    &:first-child {
+      margin: 0 0 10px;
+      color: $accent;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    line-height: 1.16;
+  }
+}
+
+.card-grid {
+  @include grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  @include card-shell;
+
+  h2,
+  h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  p {
+    margin: 0;
+    color: $text-muted;
+    line-height: 1.75;
+  }
+}
+
+.car-card {
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(246, 176, 66, 0.3);
+  }
+
+  &_media {
+    position: relative;
+    height: 244px;
+    background: $surface-soft;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 40%;
+      background: linear-gradient(180deg, transparent, rgba(11, 16, 32, 0.35));
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: $accent;
+    color: $accent-dark;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  &_body {
+    padding: 22px;
+  }
+
+  &_meta,
+  &_specs,
+  &_desc {
+    color: $text-muted;
+  }
+
+  &_meta,
+  &_specs {
+    font-size: 13px;
+  }
+
+  &_name {
+    margin: 8px 0 12px;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  &_specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &_desc {
+    min-height: 64px;
+    margin-top: 14px;
+    line-height: 1.75;
+  }
+
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 18px;
+  }
+
+  &_price {
+    color: $accent;
+    font-size: 24px;
+    font-weight: 900;
+  }
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  border: 1px solid $line;
+  border-radius: $radius-md;
+  padding: 14px 16px;
+  background: #0d1225;
+  color: $text;
+  outline: none;
+
+  &:focus {
+    border-color: rgba(246, 176, 66, 0.4);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.input,
+.textarea {
+  &::placeholder {
+    color: #657088;
+  }
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.inline-icon-input {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    color: #657088;
+    transform: translateY(-50%);
+  }
+
+  .input {
+    padding-left: 42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-grid,
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container > div {
+    &:nth-child(2) {
+      h2,
+      a {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  header nav {
+    display: none;
+  }
+
+  button[data-menu-toggle] {
+    display: inline-flex;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  header img,
+  footer img {
+    max-width: 180px;
+  }
+
+  .section,
+  .section-surface,
+  .section--page-hero,
+  .section--flush-top,
+  .section--car-detail {
+    padding: 64px 0;
+  }
+
+  .button,
+  .button--primary,
+  .button--secondary {
+    width: 100%;
+  }
+
+  .car-card_footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
