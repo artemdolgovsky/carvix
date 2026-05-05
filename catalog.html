@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/catalog.css">
+  <title>Каталог автомобилей — Carvix</title>
+</head>
+
+<body data-page="catalog">
+  <div class="site-shell">
+    <header>
+      <div class="container">
+        <a href="index.html" aria-label="Carvix home"><img src="assets/logo.svg" alt="Carvix logo" width="240"
+            height="64"></a>
+        <nav aria-label="Основная навигация">
+          <a data-nav="home" href="index.html">Главная</a>
+          <a data-nav="catalog" href="catalog.html">Каталог</a>
+          <a data-nav="terms" href="terms.html">Условия покупки</a>
+          <a data-nav="contact" href="contact.html">Контакты</a>
+        </nav>
+        <button type="button" aria-label="Открыть меню" data-menu-toggle></button>
+      </div>
+    </header>
+    <div data-mobile-panel>
+      <div class="container">
+        <a data-nav="home" href="index.html">Главная</a>
+        <a data-nav="catalog" href="catalog.html">Каталог</a>
+        <a data-nav="terms" href="terms.html">Условия покупки</a>
+        <a data-nav="contact" href="contact.html">Контакты</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="section--page-hero">
+        <div class="container">
+          <div class="section-head">
+            <p>Каталог</p>
+            <h1>Каталог автомобилей</h1>
+            <p>Ваш статус заслуживает лучшего обрамления. Ознакомьтесь с эксклюзивной подборкой автомобилей, прошедших
+              строгий технический аудит и предпродажную подготовку. Используйте фильтры по рынку, кузову и типу топлива.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--flush-top">
+        <div class="container catalog-layout">
+          <aside class="card filters">
+            <div class="section-head">
+              <p>Фильтры</p>
+              <h2>Подбор автомобиля</h2>
+            </div>
+            <div>
+              <label>
+                <span>Поиск</span>
+                <div class="inline-icon-input">
+                  <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 21l-4.3-4.3M10.5 18A7.5 7.5 0 1010.5 3a7.5 7.5 0 000 15z" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                  <input class="input" id="filterSearch" type="search" placeholder="BMW, Audi, Toyota...">
+                </div>
+              </label>
+              <label>
+                <span>Рынок</span>
+                <select class="select" id="filterMarket">
+                  <option value="">Любой</option>
+                  <option value="Новый">Новый</option>
+                  <option value="С пробегом">С пробегом</option>
+                </select>
+              </label>
+              <label>
+                <span>Кузов</span>
+                <select class="select" id="filterBody">
+                  <option value="">Любой</option>
+                  <option value="SUV">SUV</option>
+                  <option value="Седан">Седан</option>
+                  <option value="Кроссовер">Кроссовер</option>
+                </select>
+              </label>
+              <label>
+                <span>Топливо</span>
+                <select class="select" id="filterFuel">
+                  <option value="">Любое</option>
+                  <option value="Бензин">Бензин</option>
+                  <option value="Дизель">Дизель</option>
+                </select>
+              </label>
+              <label>
+                <span>Сортировка</span>
+                <select class="select" id="filterSort">
+                  <option value="">По умолчанию</option>
+                  <option value="price-asc">Сначала дешевле</option>
+                  <option value="price-desc">Сначала дороже</option>
+                  <option value="year-desc">Сначала новее</option>
+                  <option value="mileage-asc">Меньший пробег</option>
+                </select>
+              </label>
+              <button class="button--secondary" type="button" id="filterReset">Сбросить
+                фильтры</button>
+            </div>
+          </aside>
+          <div>
+            <div class="catalog-toolbar">
+              <div>Найдено автомобилей: <strong id="catalogCount">0</strong></div>
+              <a class="button--secondary" href="contact.html">Нужна помощь с выбором</a>
+            </div>
+            <div id="catalogGrid" class="card-grid"></div>
+            <div id="catalogEmpty" class="empty-state">По выбранным параметрам автомобилей не найдено. Попробуйте
+              изменить фильтры.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="assets/logo.svg" alt="Carvix logo">
+          <p>© 2026 Carvix. Все права защищены. Копирование материалов сайта без активной ссылки на источник запрещено.
+          </p>
+        </div>
+        <div>
+          <h2>Навигация</h2>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="terms.html">Условия покупки</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <span>+375 (25) 789-84-69</span>
+          <span>carvixsupport@gmail.com</span>
+          <span>г. Минск, ул. Свердлова 13А</span>
+        </div>
+        <div>
+          <h2>Поддержка</h2>
+          <span>Пн–Пт: 09:00–20:00</span>
+          <span>Сб–Вс: 10:00–16:00</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+
+</html>

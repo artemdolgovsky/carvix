@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/car.css">
+  <title>Объявление автомобиля — Carvix</title>
+</head>
+
+<body data-page="catalog">
+  <div class="site-shell">
+    <header>
+      <div class="container">
+        <a href="index.html" aria-label="Carvix home"><img src="assets/logo.svg" alt="Carvix logo" width="240"
+            height="64"></a>
+        <nav aria-label="Основная навигация">
+          <a data-nav="home" href="index.html">Главная</a>
+          <a data-nav="catalog" href="catalog.html">Каталог</a>
+          <a data-nav="terms" href="terms.html">Условия покупки</a>
+          <a data-nav="contact" href="contact.html">Контакты</a>
+        </nav>
+        <button type="button" aria-label="Открыть меню" data-menu-toggle></button>
+      </div>
+    </header>
+    <div data-mobile-panel>
+      <div class="container">
+        <a data-nav="home" href="index.html">Главная</a>
+        <a data-nav="catalog" href="catalog.html">Каталог</a>
+        <a data-nav="terms" href="terms.html">Условия покупки</a>
+        <a data-nav="contact" href="contact.html">Контакты</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a>
+          <span>•</span>
+          <a href="catalog.html">Каталог</a>
+          <span>•</span>
+          <span>Карточка автомобиля</span>
+        </nav>
+      </div>
+      <section class="section--car-detail">
+        <div class="container">
+          <div id="carDetail"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p>Похожие модели</p>
+            <h2>Вам также может подойти</h2>
+          </div>
+          <div id="similarCars" class="card-grid"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="assets/logo.svg" alt="Carvix logo">
+          <p>© 2026 Carvix. Все права защищены. Копирование материалов сайта без активной ссылки на источник запрещено.
+          </p>
+        </div>
+        <div>
+          <h2>Навигация</h2>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="terms.html">Условия покупки</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <span>+375 (25) 789-84-69</span>
+          <span>carvixsupport@gmail.com</span>
+          <span>г. Минск, ул. Свердлова 13А</span>
+        </div>
+        <div>
+          <h2>Поддержка</h2>
+          <span>Пн–Пт: 09:00–20:00</span>
+          <span>Сб–Вс: 10:00–16:00</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/car.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/contact.css">
+  <title>Контакты — Carvix</title>
+</head>
+
+<body data-page="contact">
+  <div class="site-shell">
+    <header>
+      <div class="container">
+        <a href="index.html" aria-label="Carvix home"><img src="assets/logo.svg" alt="Carvix logo" width="240"
+            height="64"></a>
+        <nav aria-label="Основная навигация">
+          <a data-nav="home" href="index.html">Главная</a>
+          <a data-nav="catalog" href="catalog.html">Каталог</a>
+          <a data-nav="terms" href="terms.html">Условия покупки</a>
+          <a data-nav="contact" href="contact.html">Контакты</a>
+        </nav>
+        <button type="button" aria-label="Открыть меню" data-menu-toggle></button>
+      </div>
+    </header>
+    <div data-mobile-panel>
+      <div class="container">
+        <a data-nav="home" href="index.html">Главная</a>
+        <a data-nav="catalog" href="catalog.html">Каталог</a>
+        <a data-nav="terms" href="terms.html">Условия покупки</a>
+        <a data-nav="contact" href="contact.html">Контакты</a>
+      </div>
+    </div>
+
+    <main>
+      <section class="section--page-hero">
+        <div class="container">
+          <div class="section-head">
+            <p>Контакты</p>
+            <h1>Обратная связь</h1>
+            <p>Оставьте заявку, и менеджер поможет подобрать автомобиль, уточнить наличие, цену, кредит или доставку.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--flush-top">
+        <div class="container contact-layout">
+          <div>
+            <div class="contact-cards">
+              <article class="card">
+                <div><span><svg width="20" height="20" viewBox="0 0 24 24">
+                      <path d="M4 5h16v14H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linejoin="round" />
+                    </svg></span>
+                  <div>
+                    <h2>Email</h2><span>carvixsupport@gmail.com</span>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <div><span><svg width="20" height="20" viewBox="0 0 24 24">
+                      <path d="M6 3h4l2 5-2 2a16 16 0 006 6l2-2 5 2v4a2 2 0 01-2 2A19 19 0 013 5a2 2 0 012-2z"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                    </svg></span>
+                  <div>
+                    <h2>Телефон</h2><span>+375 (25) 789-84-69</span>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <div><span><svg width="20" height="20" viewBox="0 0 24 24">
+                      <path d="M12 21s7-4.35 7-11a7 7 0 10-14 0c0 6.65 7 11 7 11z" fill="none" stroke="currentColor"
+                        stroke-width="2" />
+                      <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2" />
+                    </svg></span>
+                  <div>
+                    <h2>Адрес</h2><span>г. Минск ул. Свердлова 13А</span>
+                  </div>
+                </div>
+              </article>
+              <article class="card">
+                <div><span><svg width="20" height="20" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+                      <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg></span>
+                  <div>
+                    <h2>Время работы</h2>
+                    <span>Пн–Пт: 09:00–20:00</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <article class="card">
+              <div id="contactNotice">Заявка успешно отправлена. Менеджер свяжется с вами в ближайшее
+                время.</div>
+              <form id="contactForm" class="form-grid" novalidate>
+                <div>
+                  <p>
+                    <label for="name">Имя *</label>
+                    <input class="input" id="name" type="text" placeholder="Ваше имя" required minlength="2">
+                  </p>
+                  <p>
+                    <label for="phone">Телефон *</label>
+                    <input class="input" id="phone" type="tel" placeholder="+375 (__) ___-__-__" required>
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <label for="email">Email</label>
+                    <input class="input" id="email" type="email" placeholder="email@example.com">
+                  </p>
+                  <p>
+                    <label for="topic">Тема</label>
+                    <select class="select" id="topic">
+                      <option>Покупка нового автомобиля</option>
+                      <option>Покупка авто с пробегом</option>
+                      <option>Кредит и рассрочка</option>
+                      <option>Доставка автомобиля</option>
+                      <option>Другое</option>
+                    </select>
+                  </p>
+                </div>
+                <p>
+                  <label for="message">Сообщение *</label>
+                  <input class="textarea" id="message" type="text" placeholder="Введите ваше сообщение" required>
+                </p>
+                <p>
+                  <button class="button--primary" type="submit">Отправить заявку</button>
+                </p>
+              </form>
+            </article>
+          </div>
+          <div>
+            <article class="card">
+              <h2>Как нас найти</h2>
+              <p>Наш офис находится в центре Минска по адресу: улица Свердлова, 13А.
+К нам удобно добраться как на личном автомобиле, так и на общественном транспорте.
+В офисе вы можете получить консультацию, уточнить условия покупки, задать вопросы
+по автомобилям и обсудить оформление заказа. Также здесь можно заранее договориться
+об осмотре выбранного автомобиля.
+              </p>
+              <div aria-hidden="true">
+                <a href = "https://yandex.com/maps/157/minsk/house/Zk4YcwFgSEwBQFtpfXR4cHtgYg==/?ll=27.560127%2C53.891434&z=16.11"><img src="assets/map.png" alt="Карта расположения офиса Carvix"></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="assets/logo.svg" alt="Carvix logo">
+          <p>© 2026 Carvix. Все права защищены. Копирование материалов сайта без активной ссылки на источник запрещено.
+          </p>
+        </div>
+        <div>
+          <h2>Навигация</h2>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="terms.html">Условия покупки</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div>
+          <h2>Контакты</h2>
+          <span>+375 (25) 789-84-69</span>
+          <span>carvixsupport@gmail.com</span>
+          <span>г. Минск, ул. Свердлова 13А</span>
+        </div>
+        <div>
+          <h2>Поддержка</h2>
+          <span>Пн–Пт: 09:00–20:00</span>
+          <span>Сб–Вс: 10:00–16:00</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>
